@@ -27,4 +27,6 @@ jobs:
           context: .
           push: true
           platforms: linux/arm64/v8
-          tags: andybaxter/docker-tidyverse-arm:{{ github.ref_name }}
+          tags: |
+            andybaxter/docker-tidyverse-arm:${{ github.ref_name }}
+            andybaxter/docker-tidyverse-arm:latest
